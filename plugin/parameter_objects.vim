@@ -82,6 +82,7 @@ function s:parameter_object(mode)
       endwhile
 
       if a:mode == "a" && @l == ',' && !exists("gotone")
+         normal! wh
       else
          normal! h
       endif
